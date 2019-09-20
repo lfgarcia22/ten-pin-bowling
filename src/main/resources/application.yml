@@ -1,0 +1,10 @@
+spring:
+  main:
+    banner-mode: "off"
+logging:
+  level:
+    ROOT: OFF
+    ec.com.lfgarcia22.tenpinbowling: DEBUG
+  pattern:
+    console: "%msg%n"
+    file: "%d %p %c{1.} [%t] %m%n"

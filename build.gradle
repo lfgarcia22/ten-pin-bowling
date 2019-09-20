@@ -1,11 +1,13 @@
 plugins {
     id 'java'
     id 'application'
+    id 'org.springframework.boot' version '2.1.8.RELEASE'
 }
+apply plugin: 'io.spring.dependency-management'
 
 group 'ec.com.lfgarcia22'
 version '1.0.0'
-mainClassName = "ec.com.lfgarcia22.tenpinbowling.Main"
+mainClassName = 'ec.com.lfgarcia22.tenpinbowling.Main'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -14,10 +16,16 @@ repositories {
     mavenCentral()
 }
 
-
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.boot:spring-boot-dependencies:${springBootVersion}"
+    }
+}
 
 dependencies {
-    testCompile "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+    implementation 'org.springframework.boot:spring-boot-starter'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
 }
 
