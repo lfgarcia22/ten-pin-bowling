@@ -1,0 +1,6 @@
+# Project and build folders/files
+.idea
+.gradle
+.DS_Store
+build
+out
