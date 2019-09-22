@@ -19,8 +19,8 @@ public class FileContentBuilder {
     }
 
     public FileContentBuilder setPins(String pinFalls) {
-        obj.setPinFalls(pinFalls);
-        int value = pinFalls.equals("F")
+        obj.setPinFalls(pinFalls.toUpperCase());
+        int value = pinFalls.equalsIgnoreCase("f")
                 ? 0
                 : Integer.parseInt(pinFalls);
         obj.setPinsKnockedDown(value);
