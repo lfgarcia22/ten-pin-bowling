@@ -1,25 +1,41 @@
 # Ten-pin Bowling
 
-### Unit Tests:
+## By Luis García Castro
+
+---
+
+### Run Tests:
 
 ```bash
 ./gradlew test
 ```
 
-### Build:
+### Clean and Build:
 
 ```bash
 ./gradlew clean build
 ```
 
-### Execute:
+### Execute application:
 
-* Normal RUN:
 ```bash
-./gradlew run
+./gradlew run --args="/path/to/file/file-name"
 ```
 
-* With args[]:
+With multiple files in same execution:
 ```bash
-./gradlew run --args="Var1 Var2 Var 3"
+./gradlew run --args="/path/to/file/file-name-1 /path/to/file/file-name-2"
 ```
+
+---
+
+# Examples:
+
+* Single-file run:
+
+  ![single-run](./docs/single-execution.png)
+
+* Multi-file run:
+
+  ![multi-file-run](./docs/multi-file-execution.png)
+
