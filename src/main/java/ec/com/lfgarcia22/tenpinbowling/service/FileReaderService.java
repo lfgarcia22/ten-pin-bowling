@@ -4,6 +4,7 @@ import ec.com.lfgarcia22.tenpinbowling.model.FileContent;
 import ec.com.lfgarcia22.tenpinbowling.model.FileContentBuilder;
 import ec.com.lfgarcia22.tenpinbowling.utils.Constants;
 import ec.com.lfgarcia22.tenpinbowling.utils.TenPinBowlingException;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
@@ -15,6 +16,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+@Service
 public class FileReaderService {
 
     public List<FileContent> readFile(String path) throws TenPinBowlingException {
