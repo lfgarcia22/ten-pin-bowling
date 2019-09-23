@@ -29,7 +29,7 @@ With multiple files in same execution:
 
 ---
 
-# Examples:
+## Examples:
 
 * Single-file run:
 
@@ -38,4 +38,10 @@ With multiple files in same execution:
 * Multi-file run:
 
   ![multi-file-run](./docs/multi-file-execution.png)
+
+---
+
+## Open Project
+
+### [IntelliJ IDEA](./docs/intellij-idea.md)
 
